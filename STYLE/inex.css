@@ -1,0 +1,62 @@
+.missionvission{
+    display: flex;
+    width: 100%;
+}
+.mission image{
+    width:50%;
+    height: 200px;
+}
+.vission image{
+    width:50%;
+    height: 200px;
+}
+.goal image{
+    width:50%;
+    height: 200px;
+}
+
+/* mission section*/
+.backdoor{
+   display: flex;
+   
+  }
+  .containerv {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 20px auto;
+    
+}
+.boxv {
+    width:70%;
+    height:200px
+    background-color:rgb(214, 226, 144);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px; /* Space between boxes */
+}
+.boxv:hover {
+    transform: scale(1.05);
+}
+.boxv img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+.boxv h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:white;
+}
+.boxv p {
+    font-size: 15px;
+    line-height: 1.5;
+    color:black
+}

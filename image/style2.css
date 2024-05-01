@@ -1,0 +1,126 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: greenyellow;
+    color: orange;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:inherit;
+    color: blue;
+
+    
+}
+.navbar ul li a:hover{
+    background-color:black;
+
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+}
+
+.site-title {
+    font-size: 1rem;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.submenu {
+    position: relative;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+}
+
+.submenu:hover .sub-menu {
+    display: block;
+    color: red;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: greenyellow;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.about{
+border: 2px, solid, red;
+font-size: 30px;
+margin-bottom: 1opx;
+color: green;
+border-radius: 50px;
+
+}
+.about .inside{
+    border-radius: 50px;
+border: 2px, solid, red;;
+}
+.container{
+
+	display: inline-flex;
+
+	
+}
+
+.container .th{
+    border-radius: 50px;
+	width: 50vw;
+	height: 50pvh;
+	background-color: antiquewhite;
+	color: black;
+	font-size: 1.3vw;
+	margin: 2em  1em;
+	padding: 0.8em 0.8em ;
+	
+}
+.container .th :hover{
+
+    background-color: #32b411;
+    
+}

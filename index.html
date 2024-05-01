@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundibugyo Improved Cocoa Farmers Cooperative Society Limited</title>
+    <link rel="stylesheet" href="STYLE/style2.css">
+    <link rel="stylesheet" href="STYLE/inex.css">
+    <link rel="shortcut icon" type="images/svg" href="image/jose.png">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="image/jose.png" alt="my logo" class="logo">
+            <h1 class="site-title">Bundibugyo Improved Cocoa Farmers Cooperative Society Limited</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html" class="active" style="color:orange;">Home</a></li>
+            <li><a href="aboutus.html" >About Us</a></li>
+            <li class="submenu">
+                <a href="services.html">services</a>
+                <ul class="sub-menu">
+                    <li><a href="services.html#serv">Cocoa Beans</a></li>
+                    <li><a href="services.html#serv">Cocoa Powder</a></li>
+                    <li><a href="services.html#serv">Cocoa Butter</a></li>
+                </ul>
+            </li>
+            
+            <li class="submenu">
+                <a href="contactus.html">contact</a>
+                <ul class="sub-menu">
+                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </li>
+            <li><a href="portfilio.html">portfilio</a></li>
+        </ul>
+    </div>
+
+    <div class="slider">
+        <img src="image/gooal.jpg" alt="Slider Image 1">
+        <img src="image/BIC-5-768x576.jpg" alt="Slider Image 2">
+        <img src="image/Bundibugyo-BIO_grande .png" alt="Slider Image 3">
+        <img src="image/Pearl-cocoa.png" alt="Slider Image 4">
+        <div class="slider-nav">
+            <button onclick="prevSlide()">Prev</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slider img');
+
+        function showSlide(index) {
+            if (index < 0) {
+                slideIndex = slides.length - 1;
+            } else if (index >= slides.length) {
+                slideIndex = 0;
+            } else {
+                slideIndex = index;
+            }
+
+            slides.forEach((slide) => {
+                slide.style.display = 'none';
+            });
+
+            slides[slideIndex].style.display = 'block';
+        }
+
+        function prevSlide() {
+            showSlide(slideIndex - 1);
+        }
+
+        function nextSlide() {
+            showSlide(slideIndex + 1);
+        }
+
+        // Auto-play the slider every 4 seconds
+        let autoPlayInterval = setInterval(nextSlide, 4000);
+
+        // Pause auto-play on hover
+        document.querySelector('.slider').addEventListener('mouseenter', () => {
+            clearInterval(autoPlayInterval);
+        });
+
+        document.querySelector('.slider').addEventListener('mouseleave', () => {
+            autoPlayInterval = setInterval(nextSlide, 4000);
+        });
+
+        // Show the first slide initially
+        showSlide(slideIndex);
+    </script>
+
+ <div class="backdoor">
+        <div class="containerv" id="find us">
+          <div class="boxv">
+              <h3 style="color: chartreuse;">Mission</h3>
+              <p>Increase incomes and reduce risk for farmers.
+                Operate sustainably with the capacity to self-grow.
+                Improve the global reputation of the product from the cooperative.</p>
+          </div>
+          <div class="boxv">
+              <h3 style="color: chartreuse;">Vision</h3>
+              <p>Our focus is on 3 aspects of value chain development, all contributing to premium export prices and, higher and more stable farm-gate prices to the farmers.</p>
+          </div>
+          <div class="boxv">
+              <img src="image/gooal.jpg" alt="GOAL">
+              <h3 style="color: chartreuse;">Goals</h3>
+              <p>50% increase farmgate prices and farmers’ revenue.
+                An increase in annual turnover of the member farmers of the cooperative.
+                Win cocoa of excellence regional awards.</p>
+          </div>
+         
+        </div>
+        </div>
+</div>
+
+<!-- 
+    <div class="back" style="background-color: orange;">
+    <div class="container">
+        <div class="th">
+        <h6>  Bwamba Bundibugyo Town Council Bundibugyo Na 0 1225 Bundibugyo made 2 import shipments, it's top 1 sourcing countries are Congo and Top 1 Import product category is : HSN Code 18010000000
+            These facts are updated till 25 May 2023, and are based on Volza's Global Buyers & Suppliers directory, sourced from 70 countries export import shipments with names of buyers, suppliers, top decision maker's contact information like phone, email and LinkedIn profiles.
+     </div>
+     <div class="th">
+     <h6>
+        Bundibugyo Improved Cocoa Farmers Cooperative Society Ltd Bundibugyo Bundibugyo Town Council Bundibugyo Na 0 1225 Bundibugyo made 1 export shipments, it's top 1 export markets are Uganda and Top 1 Export product category is : HSN Code 18010000000
+        Bundibugyo Improved Cocoa Farmers Cooperative Society Ltd Bundibugyo..</div>
+     </h6>
+     </div>
+     <div class="container">
+        <div class="th">
+        <img src="download jjj.png" alt="about">FARMERS ARE SPLITING COCOA PONDS TO GET COCOA SEEDS
+                 </div>
+     <div class="th">
+     <img src="mjjj.png" alt=""> FARMERS ARE DRYING COCOA SEEDS AND TAKE TO THE COOPERATIVE FOR SALE AFTER DRYING
+        </div>
+     </h6>
+     </div>
+    </div>
+     <div class="smile" style="background-color: pink;">
+<div class="about">
+         
+          <div class="inside">
+            <center><h2> ABOUT US</h2></center> 
+     <p>     Bundibugyo Improved Cocoa Farmers Cooperative Society Ltd Bundibugyo Bundibugyo Town Council Bundibugyo Na 0 1225 Bundibugyo made 1 export shipments, it's top 1 export markets are Uganda and Top 1 Export product category is : HSN Code 18010000000
+Bundibugyo Improved Cocoa Farmers Cooperative Society Ltd Bundibugyo Bwamba Bundibugyo Town Council Bundibugyo Na 0 1225 Bundibugyo made 2 import shipments, it's top 1 sourcing countries are Congo and Top 1 Import product category is : HSN Code 18010000000
+These facts are updated till 25 May 2023, and are based on Volza's Global Buyers & Suppliers directory, sourced from 70 countries export import shipments with names of buyers, suppliers, top decision maker's contact information like phone, email and LinkedIn profiles.
+</p>   
+</div>  
+</div> 
+</div> -->
+
+<!-- FOOTER SECTION -->
+<footer>
+
+    <div class="footer" id="foot">
+
+        <div class="footer1">
+            
+            <p style="color: black">Follow us:   </p>
+             <p><a href="#"><img src="images/icons8-telegram-96.png" alt="Facebook"></a></p>   
+              <p><a href="#"><img src="images/icons8-instagram-96.png" alt="Insatgram"></a></p>
+              <p><a href="#"><img src="images/icons8-facebook-96.png" alt="Youtube"></a></p>                          
+        </div>
+
+        <div class="footer2">
+            <h3 style="color: black">Address</h3>
+            <p style="color: black">Bundibugyo</p>
+            <p style="color: black">Plot 8 , bumadu  Avenue,</p>
+            <p style="color: black">Bundibugyo , Uganda</p>
+        </div>
+
+        <div class="footer3">
+            <h3 style="color: black">Contact Us</h3>
+            
+            <p style="color: black">bundifarm.com</p>
+        </div>
+
+        <div class="footer4">
+            <h3 style="color: black;;">Join us</h3>
+           
+        </div>
+
+    </div>
+
+
+
+
+</footer>
+</body>
+</html>
